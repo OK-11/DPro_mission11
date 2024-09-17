@@ -9,5 +9,5 @@
 </p>
 
 <% if @user.profile_image.present? %>
-  <%= @user.profile_image %>
+  <%= image_tag(@user.profile_image, alt: "profile image") %>
 <% end %>
